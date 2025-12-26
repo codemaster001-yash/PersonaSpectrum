@@ -178,40 +178,40 @@ const App: React.FC = () => {
           </h2>
           <div className="flex flex-col lg:flex-row justify-center items-center gap-6 text-lg text-slate-300 font-medium">
             {/* Question 1: Introvert (Blue/Green) vs Extrovert (Red/Yellow) */}
-            <div className="w-full flex-1 px-8 py-4 bg-slate-800/40 border border-white/10 rounded-2xl backdrop-blur-sm shadow-xl flex items-center justify-center gap-3 break-inside-avoid">
-              <span className="text-3xl font-black uppercase bg-gradient-to-r from-sky-400 to-emerald-400 bg-clip-text text-transparent drop-shadow-sm">
+            <div className="w-full flex-1 px-3 py-3 sm:px-8 sm:py-4 bg-slate-800/40 border border-white/10 rounded-2xl backdrop-blur-sm shadow-xl flex items-center justify-center gap-2 sm:gap-3 break-inside-avoid">
+              <span className="text-lg sm:text-2xl md:text-3xl font-black uppercase bg-gradient-to-r from-sky-400 to-emerald-400 bg-clip-text text-transparent drop-shadow-sm">
                 Introverted
               </span>
-              <span className="text-slate-600 text-sm font-bold uppercase tracking-wider">
+              <span className="text-slate-600 text-xs sm:text-sm font-bold uppercase tracking-wider">
                 vs
               </span>
-              <span className="text-3xl font-black uppercase bg-gradient-to-r from-rose-500 to-amber-400 bg-clip-text text-transparent drop-shadow-sm">
+              <span className="text-lg sm:text-2xl md:text-3xl font-black uppercase bg-gradient-to-r from-rose-500 to-amber-400 bg-clip-text text-transparent drop-shadow-sm">
                 Extroverted
               </span>
             </div>
 
             {/* Question 2: Logical (Blue/Red) vs Emotional (Green/Yellow) */}
-            <div className="w-full flex-1 px-8 py-4 bg-slate-800/40 border border-white/10 rounded-2xl backdrop-blur-sm shadow-xl flex items-center justify-center gap-3 break-inside-avoid">
-              <span className="text-3xl font-black uppercase bg-gradient-to-r from-sky-400 to-rose-500 bg-clip-text text-transparent drop-shadow-sm">
+            <div className="w-full flex-1 px-3 py-3 sm:px-8 sm:py-4 bg-slate-800/40 border border-white/10 rounded-2xl backdrop-blur-sm shadow-xl flex items-center justify-center gap-2 sm:gap-3 break-inside-avoid">
+              <span className="text-lg sm:text-2xl md:text-3xl font-black uppercase bg-gradient-to-r from-sky-400 to-rose-500 bg-clip-text text-transparent drop-shadow-sm">
                 Logical
               </span>
-              <span className="text-slate-600 text-sm font-bold uppercase tracking-wider">
+              <span className="text-slate-600 text-xs sm:text-sm font-bold uppercase tracking-wider">
                 vs
               </span>
-              <span className="text-3xl font-black uppercase bg-gradient-to-r from-emerald-400 to-amber-400 bg-clip-text text-transparent drop-shadow-sm">
+              <span className="text-lg sm:text-2xl md:text-3xl font-black uppercase bg-gradient-to-r from-emerald-400 to-amber-400 bg-clip-text text-transparent drop-shadow-sm">
                 Emotional
               </span>
             </div>
 
             {/* Question 3: Deliberate (Green/Blue) vs Quick (Red/Yellow) */}
-            <div className="w-full flex-1 px-8 py-4 bg-slate-800/40 border border-white/10 rounded-2xl backdrop-blur-sm shadow-xl flex items-center justify-center gap-3 break-inside-avoid">
-              <span className="text-3xl font-black uppercase bg-gradient-to-r from-emerald-400 to-sky-400 bg-clip-text text-transparent drop-shadow-sm">
+            <div className="w-full flex-1 px-3 py-3 sm:px-8 sm:py-4 bg-slate-800/40 border border-white/10 rounded-2xl backdrop-blur-sm shadow-xl flex items-center justify-center gap-2 sm:gap-3 break-inside-avoid">
+              <span className="text-lg sm:text-2xl md:text-3xl font-black uppercase bg-gradient-to-r from-emerald-400 to-sky-400 bg-clip-text text-transparent drop-shadow-sm">
                 Deliberate
               </span>
-              <span className="text-slate-600 text-sm font-bold uppercase tracking-wider">
+              <span className="text-slate-600 text-xs sm:text-sm font-bold uppercase tracking-wider">
                 vs
               </span>
-              <span className="text-3xl font-black uppercase bg-gradient-to-r from-amber-400 to-rose-500 bg-clip-text text-transparent drop-shadow-sm">
+              <span className="text-lg sm:text-2xl md:text-3xl font-black uppercase bg-gradient-to-r from-amber-400 to-rose-500 bg-clip-text text-transparent drop-shadow-sm">
                 Quick
               </span>
             </div>
