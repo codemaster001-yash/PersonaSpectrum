@@ -35,7 +35,7 @@
         scroll-behavior: smooth;
       }
 
-      /* Custom Scrollbar */
+      /* Global Scrollbar */
       ::-webkit-scrollbar {
         width: 8px;
       }
@@ -48,6 +48,81 @@
       }
       ::-webkit-scrollbar-thumb:hover {
         background: #475569;
+      }
+
+      /* Hide Scrollbar but allow scrolling (Modern Clean Look) */
+      .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+      }
+
+      /* PRINT STYLES - Exact Desktop Reproduction */
+      @media print {
+        @page {
+          /* 
+             Set a large custom page size to accommodate the fixed desktop width.
+             1500px width approx needs ~16 inches.
+             A2 is 16.5 x 23.4 inches.
+             We set a custom size to ensure everything fits comfortably.
+          */
+          size: 1500px 2000px; /* Custom large canvas */
+          margin: 0;
+        }
+        
+        body {
+          -webkit-print-color-adjust: exact !important;
+          print-color-adjust: exact !important;
+          background-color: #0f172a !important;
+          color: #f8fafc !important;
+          
+          /* CRITICAL: Force the body to be fixed width to mimic desktop layout exactly */
+          width: 1500px !important; 
+          min-width: 1500px !important;
+          max-width: 1500px !important;
+          
+          /* Reset viewport scaling for print */
+          transform-origin: top left;
+          overflow: visible !important;
+        }
+
+        #root {
+          width: 100% !important;
+          overflow: visible !important;
+        }
+
+        /* Ensure backgrounds and text colors are preserved */
+        * {
+          -webkit-print-color-adjust: exact !important;
+          print-color-adjust: exact !important;
+          box-shadow: none !important; /* Optional: remove shadows for flatter print, or keep for 3D look */
+        }
+        
+        /* Hide UI elements */
+        .no-print, nav, footer, button, .scroll-indicator {
+          display: none !important;
+        }
+
+        /* Ensure containers expand */
+        .overflow-y-auto, .overflow-hidden {
+          overflow: visible !important;
+          height: auto !important;
+        }
+        
+        /* Force background consistency */
+        .min-h-screen {
+          background-color: #0f172a !important;
+          height: auto !important;
+          min-height: 100vh;
+        }
+
+        /* Prevent page breaks inside cards */
+        .break-inside-avoid {
+          break-inside: avoid;
+          page-break-inside: avoid;
+        }
       }
     </style>
 <script type="importmap">
